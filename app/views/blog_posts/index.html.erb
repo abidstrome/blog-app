@@ -1,0 +1,11 @@
+<h1> Welcome to My Blog</h1>
+
+<% @blog_posts.each do |post| %>
+  <div>
+<h2><%= link_to post.title, blog_post_path(post)  %></h2>
+<%= post.body %>
+   </div>
+<% end %>
+    
+
+
